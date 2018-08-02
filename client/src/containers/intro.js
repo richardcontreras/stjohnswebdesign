@@ -16,7 +16,7 @@ class Intro extends Component {
         
         this.state = { term: '',
                        colorSearchTerm: '',
-                        cardText: "I'm excited to tell you about the kinds of  websites we can build for you, but first let's introduce ourselves. My name is Richard and this is Filbert, the  company cat. What's your name?",
+                        cardText: "I'm excited to tell you about the kinds of  websites we can build, but first let's introduce ourselves. My name is Richard and this is Filbert, the  company cat. What's your name?",
                         nameInputDisplay: 'visible',
                         inputPlaceholder: 'Your name',
                         colorQuestionDisplay: 'none',

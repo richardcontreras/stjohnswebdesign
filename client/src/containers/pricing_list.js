@@ -67,7 +67,7 @@ class PricingList extends Component {
                   </Input>
                 </FormGroup>
         
-                <p className='mt-3 ml-3' style={{ display: `${this.state.viewedPricingDisplay}`}}>Now that you know our rates, click <Link to='/contact'>here</Link> to contact us and get your website started today!</p>
+                <p className='mt-3 ml-3' style={{ display: `${this.state.viewedPricingDisplay}`}}>Now that you know our rates, click <a href='/contact'>here</a> to contact us and get your website started today!</p>
 
             </Col>          
         )

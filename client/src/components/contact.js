@@ -12,7 +12,8 @@ export default class Contact extends Component {
         this.onFormSubmit = this.onFormSubmit.bind(this);
     }
     
-    onFormSubmit() {
+    onFormSubmit(event) {
+        event.preventDefault();
         this.setState({ formDisplay: 'none',
                         thankYouDisplay: 'inline'
                       })
