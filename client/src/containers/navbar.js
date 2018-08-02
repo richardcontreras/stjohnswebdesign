@@ -46,10 +46,10 @@ class NavigationBar extends React.Component {
                   About
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem><Link className='dropdown-menu-item' to='/intro'>Intro</Link></DropdownItem>
-                  <DropdownItem><Link className='dropdown-menu-item' to='/services'>Services</Link></DropdownItem>
-                  <DropdownItem><Link className='dropdown-menu-item' to='/portfolio'>Portfolio</Link></DropdownItem>
-                  <DropdownItem><Link className='dropdown-menu-item' to='/pricing'>Rates</Link></DropdownItem>
+                  <DropdownItem className='dropdown-menu-item' tag={Link} to='/intro'>Intro</DropdownItem>
+                  <DropdownItem className='dropdown-menu-item' tag={Link}  to='/services'>Services</DropdownItem>
+                  <DropdownItem className='dropdown-menu-item' tag={Link} to='/portfolio'>Portfolio</DropdownItem>
+                  <DropdownItem className='dropdown-menu-item' tag={Link} to='/pricing'>Rates</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
 
