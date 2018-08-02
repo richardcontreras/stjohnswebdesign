@@ -27,7 +27,8 @@ class Intro extends Component {
                         servicesButtonDisplay: 'none',
                         nameTagDisplayClass: 'name-tag-visible reactstrap-boxshadow',
                         rightDivImageDisplay: 'right-div-invisible reactstrap-boxshadow',
-                        rightDivImageSource: ''}
+                        rightDivImageSource: '',
+                        rightDivImageClass: ''}
         
         this.onInputChange = this.onInputChange.bind(this);
         this.onFormSubmit = this.onFormSubmit.bind(this);
@@ -60,9 +61,10 @@ class Intro extends Component {
                         colorQuestionDisplay: 'block',
                         nameTagDisplayClass: 'name-tag-invisible reactstrap-boxshadow',
                         ourServicesDisplay: 'none',
-                        rightDivImageDisplay: 'right-div-visible reactstrap-boxshadow',
+                        rightDivImageDisplay: 'right-div-visible',
                         inputPlaceholder: "Edit name?",
-                        rightDivImageSource: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Crayons-metal.png'
+                        rightDivImageSource: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Crayons-metal.png',
+                        rightDivImageClass: 'img-fluid img-thumbnail right-div-image reactstrap-boxshadow'
                       })
     }
     
@@ -80,6 +82,7 @@ class Intro extends Component {
                         colorInputPlaceholder: "Switch color?",
                         darkenTextDisplay: "block",
                         servicesButtonDisplay: 'block',
+                        rightDivImageDisplay: 'right-div-visible',
                         rightDivImageSource: 'https://images.unsplash.com/photo-1514580426463-fd77dc4d0672?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=802c875bf67a4dcaf275e11b1fa48d24&auto=format&fit=crop&w=500&q=60'
                       })
         } else {
@@ -139,8 +142,8 @@ class Intro extends Component {
                       </div>
 
                       <div className={this.state.rightDivImageDisplay}>
-                                <img className=
-    'img-fluid img-thumbnail right-div-image' src={this.state.rightDivImageSource} alt='right div'/>
+                                <img className={this.state.rightDivImageClass}
+     src={this.state.rightDivImageSource} alt='right div'/>
                       </div>
                   </Col>
 
