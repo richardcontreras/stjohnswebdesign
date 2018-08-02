@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Special+Elite" rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>St. John's Web Design</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_ws0DLzdmf0LxZqZP9f7Ux");
+       })();
+    </script>
+    <script type="text/javascript">
+            window.onload = function() {
+                if (document.getElementById('contact-form') !== null) {
+                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                        this.contact_number.value = Math.random() * 100000 | 0;
+                        emailjs.sendForm('outlook', 'new_client_intake', this);
+                    });
+                }
+            }
+    </script>
+
+  </head>
+  <body>
+    <div id='root'></div>
+  </body>
+</html>

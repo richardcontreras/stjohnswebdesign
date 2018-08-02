@@ -1,0 +1,10 @@
+export default function() {
+    return(
+        [
+            {id: 0, name: "Basic web site", description1: "If you simply want a  website for personal use that analyzes data, you can have one for free. During the current portfolio building phase of St. Johns Web Design, we are creating websites at cost and not billing for our time.", description2: "However, a free website won't have a custom domain name. Instead, you will be randomly assigned a domain name like 'heroku.apps.flying-squirrel-38961'. Funny, right? If you're not concerned about having an audience, this option could be a good fit for you.", price: 'Free!'},
+            {id: 1, name: "Add custom domain name", description1: "Most likely you will want a domain name of your choice. Adding a custom domain name, especially a memorable or descriptive one, will help bring traffic to your website.", description2: "However, simply adding a custom domain name does not make your website's connection secure. Have you ever noticed the padlock to the left of where you type in website addresses? At this tier, your website won't have a padlock, and certain browsers may even prevent others from visiting your site since the connection won't be secure.", price: "Additional $12 per year"},
+            {id: 2, name: "Add https secure connection", description1: "As we mentioned, the padlock symbol to the left of where you type in a website address indicates that the connection is secure.", description2: "Utilizing the new https secure protocol may cost more, but it ensures that visitors won't be prevented from visiting your website because of security issues.", price: "Additional $7 per month"},
+            {id: 3, name: "Add database", description1: "If you want to have a more or less static website that you'll occassionaly update, you may not need a database.", description2: "However, if you want to enable visitors to post content on your website, a database is necessary. Adding a datase can bring an additional level of interactivity to your website, which will increase traffic.", price: "Additional $10 per month"}
+        ]
+    )
+}

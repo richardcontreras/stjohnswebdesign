@@ -1,0 +1,139 @@
+#companyName {
+    font-family: 'Special Elite', cursive;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+#landing {
+    height: 725px;
+}
+
+#navbarRectangle {
+    background: linear-gradient(to right, #4D7958, #2E8687, #4D7958);
+}
+
+#navbarBrandText {
+    color: white;
+}
+
+#navbarBrandText:hover {
+    text-decoration: none;
+}
+
+.dropdown-menu-item {
+    color: black
+}
+
+#jumbotron {
+    background: none;
+    color: white;
+}
+
+.bg-image {
+    background-image: url("https://image.ibb.co/dmPs8d/bridgecoverhalf_min.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name-tag-visible {
+    display: none
+}
+
+.name-tag-invisible {
+    display: none
+}
+
+#nameTagTop, #nameTagBottom {
+    background-color: blue;
+    color: white;
+}
+
+#nameTagMiddle {
+    min-height: 3rem;
+}
+
+#nameTagTop, #nameTagMiddle {
+    font-family: 'Pacifico', cursive;
+}
+
+#recipeImage {
+    max-width: 500px;
+    max-height: 275px;
+}
+
+.right-div-visible {
+    display: none
+}
+
+.right-div-invisible {
+    display: none
+}
+
+.right-div-image {
+    max-height: 632.5px;
+}
+
+#servicesListGroup, #pricingListGroup {
+    display: none;
+}
+
+#servicesNoneSelectedHeader, #serviceSelectedNoAPI, #servicesAPINoData, #pricingNoneSelectedHeader, #pricingSelectedHeader {
+    background: linear-gradient(to right, #4D7958, #2E8687, #4D7958);
+    color: white;
+}
+
+.desktop-portfolio {
+    display: none;
+}
+
+#portfolioDetailHeader {
+    background: linear-gradient(to right, #88BBD6, #99D3DF, #88BBD6);
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .bg-image {
+        background-image: url("https://image.ibb.co/cRi8gy/bridgecoverfull_min.jpg")
+    }
+    
+    .name-tag-visible {
+        display: block
+    }
+
+    .name-tag-invisible {
+        display: none
+    }
+    
+    .right-div-visible {
+        display: block
+    }
+
+    .right-div-invisible {
+        display: none
+    }
+    
+    #servicesListGroup, #pricingListGroup {
+    display: block;
+    }
+    
+    #servicesSelectorGroup, #pricingSelectorGroup {
+    display: none;
+    }
+    
+    #recipeImage {
+    max-height: 300px;
+    }
+    
+    .desktop-portfolio {
+    display: block
+    }
+    
+    .mobile-portfolio {
+    display: none
+    }
+    
+
+}
+

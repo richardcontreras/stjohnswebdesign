@@ -1,0 +1,12 @@
+export default function() {
+    return(
+        [
+            {id: 0, name: "Single Page Applications", description1: "In a traditional website, each time you visit a new page, the server loads the entire page over again, even if you only need to change a few paragraphs of text. This is inefficient and causes delays, making your audience less likely to stay on your website.", description2: 'Using React, the same framework that powers Facebook, our websites are "single page applications" and only reload the data that actually needs to change. This makes for a faster browsing experience. Notice as you navigate through this website that it really is just a single page.', apiSegment: false},
+            {id: 1, name: "Custom Logic", description1: "As you saw during our introduction, we can create a website with dynamic content that changes in response to a user's input. Each member of your audience is unique, and we can tailor your website to each one of your clients.", description2: 'We can also analyze data and provide custom reports that will allow you to make more optimal decisions.', apiSegment: false},
+            {id: 2, name: "Fetching real-time data", description1: "The internet is a huge source of real-time data, and we believe your website should take full advantage of that. We can have your website display anything from the current weather, stock quotes, or in this case, what to make for dinner.", description2: 'Search for a recipe below!', apiSegment: true},
+            {id: 3, name: "Database Functionality", description1: "With a database, visitors can post new content on your website. This added interactivity will encourage your audience to visit your site more often so they can see what has changed since their last visit.", description2: 'A database also allows us to create a simple interface which will enable you to update the content of your website on your own.', apiSegment: false},
+            {id: 4, name: "User Authentication", description1: "We can create unique accounts for your users and profile pages with content only they can see.", description2: 'This will allow you to have client portals on your website that will make your business easier to manage.', apiSegment: false}
+            
+        ]
+    )
+}
