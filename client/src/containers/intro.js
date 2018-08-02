@@ -34,6 +34,8 @@ class Intro extends Component {
         this.onColorInputChange = this.onColorInputChange.bind(this);
         this.onColorFormSubmit = this.onColorFormSubmit.bind(this);
         this.toggleNavbarText = this.toggleNavbarText.bind(this);
+        this.scrollToTop = this.scrollToTop.bind(this);
+
     }
     
     onInputChange(event) {
@@ -64,6 +66,10 @@ class Intro extends Component {
                         inputPlaceholder: "Edit name?",
                         rightDivImageSource: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Crayons-metal.png'
                       })
+    }
+    
+    scrollToTop() {
+        window.scrollTo(0, 0)
     }
     
     onColorFormSubmit(event) {
@@ -106,7 +112,7 @@ class Intro extends Component {
                               <InputGroup >
                                   <Input value={this.state.colorSearchTerm} placeholder={this.state.colorInputPlaceholder} onChange={this.onColorInputChange}/>
                                   <InputGroupAddon addonType="append">
-                                    <Button outline color="primary">Submit</Button>
+                                    <Button onClick={this.scrollToTop} outline color="primary">Submit</Button>
                                   </InputGroupAddon>
                               </InputGroup>
                           </Form>
