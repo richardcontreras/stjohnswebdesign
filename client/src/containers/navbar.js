@@ -54,7 +54,7 @@ class NavigationBar extends React.Component {
               </Dropdown>
 
               <NavItem>
-                <NavLink style={{color: `${this.props.navbarTextColor}`}} href="/contact">Contact</NavLink>
+                <NavLink tag={Link} to='/contact' style={{color: `${this.props.navbarTextColor}`}}>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

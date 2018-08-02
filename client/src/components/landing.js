@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Landing = () => (
     <div id='landing' className='bg-image'>
@@ -7,7 +8,7 @@ const Landing = () => (
           <p className="lead">Whatever you have to say, we can create a website to help spread your message. </p>
           <hr className="my-4" />
           <p>We offer dynamic designs that are as unique as your ideas. From a business to a blog, we provide comprehensive web design solutions.</p>
-          <a className="btn btn-info btn-lg" href="/intro" role="button">Learn More</a>
+          <Link className="btn btn-info btn-lg" to="/intro" role="button">Learn More</Link>
         </div>
     </div>
 )
