@@ -23,7 +23,9 @@ export default class Contact extends Component {
             <Container>
                 <Row>
                     <Col>
-                        <h5 className='my-4'>Contact us at <a href="mailto:richard@stjohnswebdesign.com">richard@stjohnswebdesign.com</a>, or simply fill out the form below!</h5>
+                       <Col className='pl-0' sm={{ size: 10, offset: 2 }}>
+                        <h6 id='contactHeader' className='my-4'>Contact us at <a href="mailto:richard@stjohnswebdesign.com">richard@stjohnswebdesign.com</a>, or simply fill out the form below!</h6>
+                        </Col>
             
                         <Form style={{display: `${this.state.formDisplay}`}} id="contact-form" onSubmit={this.onFormSubmit}>
                             <input type="hidden" name="contact_number"/>

@@ -10,7 +10,7 @@ export default class PortfolioDetail extends Component {
             <Container className='mt-4 mobile-portfolio'>
                 <Row>
                     <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 6, offset: 3 }} lg={{ size: 4, offset: 4 }} xl={{ size: 4, offset: 4 }}>
-                        <Card>
+                        <Card className='reactstrap-boxshadow'>
                             <CardImg top width="100%" src='https://image.ibb.co/kx9g0e/Screenshot_20180801_165744.png' alt="Card cap" />
                             <CardBody className='pt-0'>
                               <CardTitle >Passportlandia</CardTitle>
@@ -28,11 +28,11 @@ export default class PortfolioDetail extends Component {
                 <Row>
                     <Col md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 1 }} xl={{ size: 4, offset: 2 }}>
                             <img className=
-    'img-fluid img-thumbnail' top width="100%" src='https://image.ibb.co/kx9g0e/Screenshot_20180801_165744.png' alt="Card cap" />
+    'img-fluid img-thumbnail reactstrap-boxshadow' top width="100%" src='https://image.ibb.co/kx9g0e/Screenshot_20180801_165744.png' alt="Card cap" />
                     </Col>
             
                     <Col md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 0 }} xl={{ size: 4, offset: 0 }}>
-                        <Card>
+                        <Card className='reactstrap-boxshadow'>
                               <CardHeader id='portfolioDetailHeader'><h5 className='text-center'>Passportlandia</h5></CardHeader>
                               <CardBody>
                                   <CardSubtitle className='text-center'><a href='https://www.passportlandia.com' target="_blank">www.passportlandia.com</a></CardSubtitle>

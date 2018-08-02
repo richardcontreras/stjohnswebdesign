@@ -47,7 +47,7 @@ class ServicesList extends Component {
     render() {
         return (
             <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 5, offset: 0 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 2 }} className='mt-4'>
-                <ListGroup id='servicesListGroup'>
+                <ListGroup className='reactstrap-boxshadow' id='servicesListGroup'>
                     {this.renderList()}
                 </ListGroup>
                 <FormGroup id='servicesSelectorGroup'>

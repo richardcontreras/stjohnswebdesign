@@ -8,7 +8,7 @@ class PricingDetail extends Component {
         if (!this.props.pricingItem) {
             return (
                 <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 7, offset: 0 }} lg={{ size: 6, offset: 0 }} xl={{ size: 5, offset: 0 }}>
-                    <Card className='mt-4'>
+                    <Card className='mt-4 reactstrap-boxshadow'>
                         <CardHeader id='pricingNoneSelectedHeader' style={{background: `${this.props.headerColor}`, color: `${this.props.headerTextColor}`}}><h5>Select a feature for pricing information</h5></CardHeader>
                         <CardBody>
                         <CardImg src='https://images.unsplash.com/photo-1516159754081-f01c990481dd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5833794a8cdecd7fbd8bc2af0ab14b30&auto=format&fit=crop&w=1050&q=80' alt="Card cap"/>
@@ -20,7 +20,7 @@ class PricingDetail extends Component {
         
         return (
             <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 7, offset: 0 }} lg={{ size: 6, offset: 0 }} xl={{ size: 5, offset: 0 }} className='mt-4'>
-                <Card>
+                <Card className='reactstrap-boxshadow'>
                         <CardHeader id='pricingSelectedHeader' style={{background: `${this.props.headerColor}`, color: `${this.props.headerTextColor}`}}><h5>{this.props.pricingItem.name}</h5></CardHeader>
                         <CardBody>
                             <CardText>{this.props.pricingItem.description1}</CardText>

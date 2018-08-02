@@ -47,7 +47,7 @@ class PricingList extends Component {
     render() {
         return (
             <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 5, offset: 0 }} lg={{ size: 4, offset: 1 }} xl={{ size: 3, offset: 2 }} className='mt-4'>
-                <ListGroup id='pricingListGroup'>
+                <ListGroup className='reactstrap-boxshadow' id='pricingListGroup'>
                     {this.renderList()}
                 </ListGroup>
                 <FormGroup id='pricingSelectorGroup'>

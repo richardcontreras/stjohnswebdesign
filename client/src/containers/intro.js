@@ -25,8 +25,8 @@ class Intro extends Component {
                         changeColorToggleValue: 2,
                         ourServicesDisplay: 'visible',
                         servicesButtonDisplay: 'none',
-                        nameTagDisplayClass: 'name-tag-visible',
-                        rightDivImageDisplay: 'right-div-invisible',
+                        nameTagDisplayClass: 'name-tag-visible reactstrap-boxshadow',
+                        rightDivImageDisplay: 'right-div-invisible reactstrap-boxshadow',
                         rightDivImageSource: ''}
         
         this.onInputChange = this.onInputChange.bind(this);
@@ -58,9 +58,9 @@ class Intro extends Component {
         this.setState({ cardText: `Hello, ${this.state.term}, it's nice to meet you! I've added your name in the navigation bar so I'll be sure to remember it (expand the menu if you're on a mobile device). I know this is kind of a corny question, but what's your favorite color?`,
                         term: '',
                         colorQuestionDisplay: 'block',
-                        nameTagDisplayClass: 'name-tag-invisible',
+                        nameTagDisplayClass: 'name-tag-invisible reactstrap-boxshadow',
                         ourServicesDisplay: 'none',
-                        rightDivImageDisplay: 'right-div-visible',
+                        rightDivImageDisplay: 'right-div-visible reactstrap-boxshadow',
                         inputPlaceholder: "Edit name?",
                         rightDivImageSource: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Crayons-metal.png'
                       })
@@ -95,7 +95,7 @@ class Intro extends Component {
                 <Row>
 
                   <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 0 }} xl={{ size: 4, offset: 1 }}>
-                      <Card>
+                      <Card className='reactstrap-boxshadow'>
                         <CardImg top width="100%" src="https://image.ibb.co/hxx14T/ic_2962.png" alt="Card cap" />
                         <CardBody>
                           <CardTitle style={{ display: `${this.state.ourServicesDisplay}`}}>Our services</CardTitle>

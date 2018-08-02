@@ -37,6 +37,10 @@
     background-size: cover;
 }
 
+.reactstrap-boxshadow {
+    box-shadow: 1.5px 1.5px 2.5px gray;
+}
+
 .name-tag-visible {
     display: none
 }
@@ -93,6 +97,19 @@
     color: white;
 }
 
+#contactHeader {
+    display: inline-block;
+    padding: 3.5px 3.5px 3.5px 10px;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+}
+
+@media only screen and (min-width: 576px) {
+    #contactHeader {
+        margin-left: 4px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .bg-image {
         background-image: url("https://image.ibb.co/cRi8gy/bridgecoverfull_min.jpg")
@@ -133,7 +150,6 @@
     .mobile-portfolio {
     display: none
     }
-    
 
 }
 

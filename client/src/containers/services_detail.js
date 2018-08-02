@@ -30,7 +30,7 @@ class ServicesDetail extends Component {
         if (!this.props.service) {
             return (
                 <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 7, offset: 0 }} lg={{ size: 6, offset: 0 }} xl={{ size: 5, offset: 0 }}>
-                    <Card className='mt-4'>
+                    <Card className='mt-4 reactstrap-boxshadow'>
                         <CardHeader id='servicesNoneSelectedHeader' style={{background: `${this.props.headerColor}`, color: `${this.props.headerTextColor}`}}><h5>Select a service for more information</h5></CardHeader>
                         <CardBody>
                         <CardImg src='https://images.unsplash.com/photo-1531594896955-305cf81269f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f72dd96a14b91aac047e3c71c0516a7&auto=format&fit=crop&w=500&q=60' alt="Card cap"/>
@@ -43,7 +43,7 @@ class ServicesDetail extends Component {
         if (!this.props.apiData && this.props.service.apiSegment) {
              return (
                 <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 7, offset: 0 }} lg={{ size: 6, offset: 0 }} xl={{ size: 5, offset: 0 }}>
-                    <Card className='mt-4'>
+                    <Card className='mt-4 reactstrap-boxshadow'>
                         <CardHeader id='servicesAPINoData' style={{background: `${this.props.headerColor}`, color: `${this.props.headerTextColor}`}}><h5>{this.props.service.name}</h5></CardHeader>
                         <CardBody>
                             <CardText>{this.props.service.description1}</CardText>
@@ -66,7 +66,7 @@ class ServicesDetail extends Component {
 
                  return (
                      <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 7, offset: 0 }} lg={{ size: 6, offset: 0 }} xl={{ size: 5, offset: 0 }}>
-                         <Card body className="mt-4">
+                         <Card body className="mt-4 reactstrap-boxshadow">
                             <CardText>I'm sorry, we can't find anything by that name. Would you like to search for another recipe?</CardText>
                             <Form onSubmit={this.onFormSubmit}>
                                 <InputGroup>
@@ -90,7 +90,7 @@ class ServicesDetail extends Component {
 
                  return (
                      <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 7, offset: 0 }} lg={{ size: 6, offset: 0 }} xl={{ size: 5, offset: 0 }}>
-                         <Card className="mt-4">
+                         <Card className="mt-4 reactstrap-boxshadow">
                             <CardImg id='recipeImage' src={recipeImage} alt="Card cap"/>
                             <CardBody>
                             <CardTitle>{recipeTitle}</CardTitle>
@@ -113,7 +113,7 @@ class ServicesDetail extends Component {
         
         return (
             <Col xs={{ size: 10, offset: 1 }} sm={{ size: 10, offset: 1 }} md={{ size: 7, offset: 0 }} lg={{ size: 6, offset: 0 }} xl={{ size: 5, offset: 0 }} className='mt-4'>
-                <Card>
+                <Card className='reactstrap-boxshadow'>
                         <CardHeader id='serviceSelectedNoAPI' style={{background: `${this.props.headerColor}`, color: `${this.props.headerTextColor}`}}><h5>{this.props.service.name}</h5></CardHeader>
                         <CardBody>
                             <CardText>{this.props.service.description1}</CardText>
