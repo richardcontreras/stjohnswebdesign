@@ -60,6 +60,7 @@ class Intro extends Component {
                         term: '',
                         colorQuestionDisplay: 'block',
                         nameTagDisplayClass: 'name-tag-invisible reactstrap-boxshadow',
+                        nameInputDisplay: 'none',
                         ourServicesDisplay: 'none',
                         rightDivImageDisplay: 'right-div-visible',
                         inputPlaceholder: "Edit name?",
@@ -78,7 +79,6 @@ class Intro extends Component {
         this.props.changeNavbarColor(colorCheck);
         this.setState({ cardText: `Okay, I changed the color scheme of the site to ${this.state.colorSearchTerm.toLowerCase()}. Go ahead and try a fun color, like Honeydew or Papaya Whip!`,
                         colorSearchTerm: '',
-                        nameInputDisplay: 'none',
                         colorInputPlaceholder: "Switch color?",
                         darkenTextDisplay: "block",
                         servicesButtonDisplay: 'block',
@@ -117,7 +117,7 @@ class Intro extends Component {
 
                           <Form style={{ display: `${this.state.nameInputDisplay}`}} onSubmit={this.onFormSubmit}>
                               <InputGroup >
-                                  <Input value={this.state.term} placeholder={this.state.inputPlaceholder} onChange={this.onInputChange}/>
+                                  <Input value={this.state.term} placeholder={this.state.inputPlaceholder} onChange={this.onInputChange} autofocus='true'/>
                                   <InputGroupAddon addonType="append">
                                     <Button outline color="primary">Submit</Button>
                                   </InputGroupAddon>
