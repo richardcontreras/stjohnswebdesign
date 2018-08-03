@@ -98,7 +98,7 @@ class Intro extends Component {
                 <Row>
 
                   <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 0 }} xl={{ size: 4, offset: 1 }}>
-                      <Card className='reactstrap-boxshadow'>
+                      <Card className='reactstrap-boxshadow mb-4'>
                         <CardImg top width="100%" src="https://image.ibb.co/hxx14T/ic_2962.png" alt="Card cap" />
                         <CardBody>
                           <CardTitle style={{ display: `${this.state.ourServicesDisplay}`}}>Our services</CardTitle>
