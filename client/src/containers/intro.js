@@ -117,7 +117,7 @@ class Intro extends Component {
 
                           <Form style={{ display: `${this.state.nameInputDisplay}`}} onSubmit={this.onFormSubmit}>
                               <InputGroup >
-                                  <Input value={this.state.term} placeholder={this.state.inputPlaceholder} onChange={this.onInputChange} autofocus='true'/>
+                                  <Input value={this.state.term} placeholder={this.state.inputPlaceholder} onChange={this.onInputChange} />
                                   <InputGroupAddon addonType="append">
                                     <Button outline color="primary">Submit</Button>
                                   </InputGroupAddon>
