@@ -7,6 +7,7 @@ import { Card, CardImg, CardHeader, CardFooter, CardText, CardBody,
 import { greetUser } from '../actions/index';
 import { changeNavbarColor } from '../actions/index';
 import { toggleNavbarText } from '../actions/index';
+import richardAndFilbert from '../img/richardAndFilbert.jpg';
 
 const colorNames = ["ALICEBLUE", "DARKOLIVEGREEN", "INDIGO", "MEDIUMPURPLE", "PURPLE", "ANTIQUEWHITE", "DARKORANGE", "IVORY", "MEDIUMSEAGREEN", "RED", "AQUA", "DARKORCHID", "KHAKI", "MEDIUMSLATEBLUE", "ROSYBROWN", "AQUAMARINE", "DARKRED", "LAVENDER", "MEDIUMSPRINGGREEN", "ROYALBLUE", "AZURE", "DARKSALMON", "LAVENDERBLUSH", "MEDIUMTURQUOISE", "SADDLEBROWN", "BEIGE", "DARKSEAGREEN	LAWNGREEN", "MEDIUMVIOLETRED", "SALMON", "BISQUE", "DARKSLATEBLUE", "LEMONCHIFFON", "MIDNIGHTBLUE", "SANDYBROWN", "BLACK", "DARKSLATEGRAY", "LIGHTBLUE", "MINTCREAM", "SEAGREEN", "BLANCHEDALMOND", "DARKTURQUOISE", "LIGHTCORAL", "MISTYROSE", "SEASHELL", "BLUE", "DARKVIOLET", "LIGHTCYAN", "MOCCASIN", "SIENNA", "BLUEVIOLET", "DEEPPINK", "LIGHTGOLDENRODYELLOW", 	"NAVAJOWHITE", "SILVER", "BROWN", "DEEPSKYBLUE", "LIGHTGRAY", "NAVY", "SKYBLUE", "BURLYWOOD", "DIMGRAY", "LIGHTGREEN", "OLDLACE", "SLATEBLUE", "CADETBLUE", "DODGERBLUE", "LIGHTPINK", "OLIVE", "SLATEGRAY", "CHARTREUSE", "FIREBRICK", "LIGHTSALMON", "OLIVEDRAB", "SNOW", "CHOCOLATE", "FLORALWHITE", "LIGHTSEAGREEN", "ORANGE", "SPRINGGREEN", "CORAL", "FORESTGREEN", "LIGHTSKYBLUE", "ORANGERED	STEELBLUE", "CORNFLOWERBLUE", "FUCHSIA", "LIGHTSLATEGRAY", "ORCHID", "TAN", "CORNSILK", "GAINSBORO", "LIGHTSTEELBLUE", "PALEGOLDENROD", "TEAL", "CRIMSON", "GHOSTWHITE", "LIGHTYELLOW", "PALEGREEN", "THISTLE", "CYAN", "GOLD", "LIME", "PALETURQUOISE", "TOMATO", "DARKBLUE", "GOLDENROD", "LIMEGREEN", "PALEVIOLETRED", "TURQUOISE", "DARKCYAN", "GRAY", "LINEN", "PAPAYAWHIP", "VIOLET", "DARKGOLDENROD", "GREEN", "MAGENTA", "PEACHPUFF", "WHEAT", "DARKGRAY", "GREENYELLOW", "MAROON", "PERU", "WHITE", "DARKGREEN", "HONEYDEW", "MEDIUMAQUAMARINE", "PINK", "WHITESMOKE", "DARKKHAKI", "HOTPINK", "MEDIUMBLUE", "PLUM", "YELLOW", "DARKMAGENTA", "INDIANRED", "MEDIUMORCHID", "POWDERBLUE", "YELLOWGREEN"]
 
@@ -97,9 +98,9 @@ class Intro extends Component {
             <Container className='mt-4'>
                 <Row>
 
-                  <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 0 }} xl={{ size: 4, offset: 1 }}>
+                    <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 0 }} xl={{ size: 4, offset: 1 }}>
                       <Card className='reactstrap-boxshadow mb-4'>
-                        <CardImg top width="100%" src="https://image.ibb.co/hxx14T/ic_2962.png" alt="Card cap" />
+                        <CardImg top width="100%" src={richardAndFilbert} alt="Card cap" />
                         <CardBody>
                           <CardTitle style={{ display: `${this.state.ourServicesDisplay}`}}>Our services</CardTitle>
                           <CardText>{this.state.cardText}</CardText>
