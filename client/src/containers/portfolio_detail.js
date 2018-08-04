@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody, CardHeader,
   CardTitle, CardSubtitle, Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import passportlandia from '../img/pplScreenshot.png';
 
 export default class PortfolioDetail extends Component {
     render() {
@@ -11,7 +12,7 @@ export default class PortfolioDetail extends Component {
                 <Row>
                     <Col xs={{ size: 10, offset: 1 }} sm={{ size: 8, offset: 2 }} md={{ size: 6, offset: 3 }} lg={{ size: 4, offset: 4 }} xl={{ size: 4, offset: 4 }}>
                         <Card className='reactstrap-boxshadow'>
-                            <CardImg top width="100%" src='https://image.ibb.co/kx9g0e/Screenshot_20180801_165744.png' alt="Card cap" />
+                            <CardImg top width="100%" src={passportlandia} alt="Card cap" />
                             <CardBody className='pt-0'>
                               <CardTitle >Passportlandia</CardTitle>
                               <CardSubtitle><a href='https://www.passportlandia.com'>www.passportlandia.com</a></CardSubtitle>
@@ -28,7 +29,7 @@ export default class PortfolioDetail extends Component {
                 <Row>
                     <Col md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 1 }} xl={{ size: 4, offset: 2 }}>
                             <img className=
-    'img-fluid img-thumbnail reactstrap-boxshadow' top width="100%" src='https://image.ibb.co/kx9g0e/Screenshot_20180801_165744.png' alt="Card cap" />
+    'img-fluid img-thumbnail reactstrap-boxshadow' top width="100%" src={passportlandia} alt="Card cap" />
                     </Col>
             
                     <Col md={{ size: 6, offset: 0 }} lg={{ size: 5, offset: 0 }} xl={{ size: 4, offset: 0 }}>
