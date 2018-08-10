@@ -1,0 +1,28 @@
+{
+  "name": "sjwd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild":
+      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardcontreras/stjohnswebdesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardcontreras/stjohnswebdesign/issues"
+  },
+  "homepage": "https://github.com/richardcontreras/stjohnswebdesign#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
